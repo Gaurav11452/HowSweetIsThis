@@ -1,0 +1,284 @@
+/*Custom Font Face*/
+@font-face {
+    font-family: 'Kdam Thmor Pro';
+    src: url(../fonts/Kdam_Thmor_Pro/KdamThmorPro-Regular.ttf);
+    font-style: normal;
+}
+
+/*Styling for body*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Now for Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+    background-color: red;
+    color: white;
+}
+
+/*Header Logo*/
+body>header>div>img {
+    min-height: 60px;
+    min-width: 70px;
+    max-width: 100px;
+    max-height: 110px;
+    margin-left: 30px;
+}
+
+/*Styling the Navbar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/*Now for Menu*/
+menu {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-right: 15px;
+}
+
+/*No styling on the a tag*/
+a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+/*First Section*/
+body>main>.section1 {
+    position: relative;
+}
+
+/*Main Image*/
+body>main>.section1>img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 60vh;
+}
+
+/*Styling text on main image*/
+body>main>.section1>.text1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+/*Section for product images*/
+body>main>.section2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+/*Setting width of the div*/
+body>main>.section2>div {
+    max-width: 30%;
+}
+
+/*Animation on all three images*/
+body>main>.section2>div>img {
+    transition: transform 0.3s ease-in-out;
+}
+
+body>main>.section2>div>img:hover {
+    transform: scale(1.1);
+}
+
+/*Hover on text in section 2*/
+body>main>.section2>div:hover .text2,
+div:hover .text3,
+div:hover .text4 {
+    color: crimson;
+    font-size: 20px;
+}
+
+/*Styling h2*/
+body>main>h2 {
+    color: green;
+    text-align: center;
+    font-size: 35px;
+}
+
+/*Styling h3 in section2*/
+body>main>.section2>h3 {
+    font-size: 25px;
+    color: brown;
+}
+
+/*Section 3 for nutritional information*/
+body>main>.section3>h2 {
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+}
+
+body>main>.section3>div>h3 {
+    color: rgb(190, 40, 45);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Kdam Thmor Pro';
+}
+
+/*Hover effect on h3*/
+body>main>.section3>div>h3:hover {
+    color: rgb(66, 194, 41);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body>main>.section3>div {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 22px;
+}
+
+body>main>.section3>div>p {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body>main>.section3>div:hover>p {
+    opacity: 1;
+}
+
+/*Now for Section 4*/
+body>main>.section4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*About Us*/
+body>main>.section4>#About>h3 {
+    font-family: 'Kdam Thmor Pro';
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: darkorchid;
+}
+
+/*Contact us*/
+body>main>.section4>#Contact>h4 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    color: darkorange;
+}
+
+body>main>.section4>#About>p {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(7, 241, 202);
+}
+
+body>main>.section4>#Contact>p {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(7, 241, 202);
+}
+
+/*Styling Footer*/
+footer {
+    background-color: red;
+    padding: 15px;
+    text-align: center;
+    margin: 0px;
+}
+
+/*Form in Footer*/
+footer>.footerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 15px;
+}
+
+footer>.footerForm>.checkbox>input {
+    width: 2%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/*Label in form*/
+label {
+    font-size: 25px;
+    color: darkblue;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/*Input in form*/
+input {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/*Submit Button*/
+button {
+    background-color: greenyellow;
+    color: white;
+    font-size: 20px;
+    border: solid red 5px;
+    padding: 8px;
+    font-weight: bold;
+    min-height: 50px;
+    min-width: 100px;
+}
+
+body>footer>.footerSection {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    color: gold;
+}
+
+body>footer>.footerSection>div>p {
+    font-size: 18px;
+}
+
+body>footer>.footerSection>div>h4 {
+    font-size: 20px;
+}
+
+body>footer>.footerSection>div>img {
+    max-height: 90px;
+    max-width: 150px;
+}
+
+body>footer>.copyrightFooter>div>h5 {
+    text-align: center;
+    color: blue;
+    font-size: 16px;
+    font-weight: bold;
+}
